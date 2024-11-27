@@ -3,11 +3,11 @@
   tasks:
     - name: say Hi to ram
       ansible.builtin.debug:
-        msg: Hey,John
-        when: user == "ram"
+        msg: Hey,Ram
+      when: user == "ram"
 
     - name: say Hi to john
       ansible.builtin.debug:
         msg: Hey,John
-        when: user == "john"
+      when: user == "john"
 

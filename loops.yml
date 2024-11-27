@@ -9,10 +9,7 @@
         - sita
         - laxman
 
-- name: loops
-  hosts: all
-  tasks:
-    - name: loop demo1
+    - name: loop demo on maps
       ansible.builtin.debug:
         msg: hello, "{{ item.name }}", Age of yours "{{ item.age}}" years.
       loop:

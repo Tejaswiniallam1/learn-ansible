@@ -3,7 +3,7 @@
   tasks:
     - name: loop demo
       ansible.builtin.debug:
-        msg: "{{ item }}"
+        msg: hello , "{{ item }}"
       loop:
         - ram
         - sita
@@ -11,7 +11,7 @@
 
     - name: loop demo on maps
       ansible.builtin.debug:
-        msg: hello, "{{ item.name }}", Age of yours "{{ item.age}}" years.
+        msg: hello, "{{ item.name }}", Age of yours "{{ item.age }}" years.
       loop:
         - { name: "ram", age: 20 }
         - { name: "rahim", age: 30 }

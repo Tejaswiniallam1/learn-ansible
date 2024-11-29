@@ -1,0 +1,4 @@
+- name: roles
+  hosts: all
+  roles:
+    - nginx

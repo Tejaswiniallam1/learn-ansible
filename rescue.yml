@@ -4,8 +4,7 @@
     - name: Block
       block:
         - name: Run shell command
-          ansible.builtin.shell: exit1
-
+          ansible.builtin.shell: exit 1
       rescue:
         - name: say hi
           ansible.builtin.debug:

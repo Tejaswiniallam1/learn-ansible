@@ -12,3 +12,5 @@
     - name: URL split
       ansible.builtin.debug:
         msg: "{{ URL | split('/') | last | regex_replace('') }}"
+
+ # last | regex_replace('') }}" ---- used for only displaying  last word of url which is defined that is :nginx-1.25.3.zip

@@ -5,9 +5,10 @@
       ansible.builtin.template:
         src: sample.txt
         dest: /tmp/sample.xt
-        notify: Say Hello Again
+      notify: Say Hello Again
 
 
-    - handlers: Say Hello Again
+  handlers:
+    - name: Say Hello Again
       ansible.builtin.debug:
         msg: Hello {{ name }} again!!

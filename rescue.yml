@@ -8,4 +8,4 @@
       rescue:
         - name: say hi
           ansible.builtin.debug:
-           msg: hi
+            msg: hi

@@ -1,4 +1,4 @@
-- name: Handlers demo
+- name: handlers demo
   hosts: localhost
   tasks:
     - name : copy sample
@@ -8,6 +8,6 @@
         notify: Say Hello Again
 
 
-    - Handlers: Say Hello Again
+    - handlers: Say Hello Again
       ansible.builtin.debug:
         msg: Hello {{ name }} again!!
